@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - BZ FurFur</title>
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/bzfurfur/css/main.css">
+</head>
+<body>
+<div class="container partition">
+<div class="row">
+    <nav>
+            <ul class="nav-ul">
+              <li class="link" style="background-color: #37c376"><a href="/bzfurfur/">BZ FurFur</a></li>
+              <li class="link"><a href="/bzfurfur/about/">About</a></li>
+              <li class="link"><a href="/bzfurfur/archive/">Archive</a></li>
+              <li class="dropdown link">
+                <a href="#" class="dropbtn">Dropdown ↓</a>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+               
+                </div>
+              </li>
+               <li class="link"><a href="/bzfurfur/contact/">Contact</a></li>
+            </ul>
+    </nav>
+</div>
+
+
+       <div class="row" style="margin-top: 2em">
+        <div class="container page-container">
+       
+           <h1 class="page-title">Contact</h1>
+         
+          <style>
+.contact-li {
+    list-style: none;
+}
+
+.contact-input {
+    width: 100%;
+}
+
+.contact-input:focus {
+    outline:none;
+    border-bottom: 1px solid #37c376;
+}
+
+.contact-label {
+    display: block;
+}
+
+ul.contact-ul {
+    margin: 0;
+    padding: 10px;
+}
+
+ #submit {
+
+    background-color: #37c376;
+    opacity: 0.8;
+    color: #eee;
+    border: none;
+
+}
+
+#submit:hover {
+    opacity: 1;
+    cursor: pointer;
+} 
+
+
+#contact-form {
+    border: 1px solid #aaa;
+    margin-bottom: 1em;
+}
+
+</style>
+
+<p>You can send me your feedback or suggestion here. If there is something missing in the theme then you can ask me to add.</p>
+
+<p>Also, if you are willing to add it yourself then feel free to open a pull request after making changes.</p>
+
+<form id="contact-form" class="form" action="https://formspree.io/shop@bzfurfur.com" method="POST" enctype="multipart/form-data">
+        <ul class="contact-ul">
+            <li class="contact-li">
+                <label class="contact-label" for="name">Name:</label>
+                <input type="text" placeholder="Your name" id="name" class="contact-input" name="name" tabindex="1" />
+            </li>
+            <li class="contact-li">
+                <label class="contact-label" for="email">Email:</label>
+                <input type="email" placeholder="Your email" id="email" class="contact-input" name="email" tabindex="2" />
+            </li>
+            <li class="contact-li">
+                <label class="contact-label" for="message">Message:</label>
+                <textarea class="contact-input" placeholder="Your message" rows="4" id="message" name="message" tabindex="3"></textarea>
+            </li>
+            <input class="button" type="submit" value="Send" id="submit" />
+        </ul>
+        
+        <input type="hidden" name="redirect_to" value="http://blog.webjeda.com/thank-you/" />
+        
+</form>
+
+<p>Just update the <code class="highlighter-rouge">email:</code> in config.yml to make this form work.</p>
+
+<p><a href="https://blog.webjeda.com/jekyll-contact-form/">Add a contact form</a></p>
+
+          
+          </div>
+    </div>
+<footer>
+<div class="container">
+    <div class="row">
+            <div class="four columns">BZ FurFur</div>
+            <div class="four columns">Designed by <a href="http://webjeda.com">Webjeda</a></div>
+            <div class="four columns">All rights reserved</div>
+        </div>
+</div>
+</footer>
+</div>
+
+</body>
+</html>
